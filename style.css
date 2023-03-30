@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #4ecdc4;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.dice {
+  width: 10rem;
+  height: 10rem;
+}
+
+.container {
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alarm {
+  width: 30rem;
+  height: 30rem;
+  background-size: contain;
+  background-image: url("assets/alarm.svg");
+}
+
+@keyframes ring {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(5deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.alarm--ring {
+  animation: ring 100ms 50;
+}/*# sourceMappingURL=style.css.map */
